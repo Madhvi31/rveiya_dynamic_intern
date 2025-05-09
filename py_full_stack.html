@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Fullstack Course</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+    }
+    .header-bar {
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header-bar h5 {
+      margin: 0;
+      font-weight: 600;
+    }
+    .header-bar .btn {
+      margin-left: 10px;
+    }
+    .course-container {
+      max-width: 1200px;
+      margin: 20px auto;
+      display: flex;
+      gap: 20px;
+    }
+    .course-details {
+      flex: 2;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .course-sidebar {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      height: fit-content;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .footer {
+      background-color: #3e0b64;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .footer a {
+      color: white;
+      margin: 0 10px;
+    }
+    .btn-purple {
+      background-color: #7a34cc;
+      color: white;
+    }
+    .btn-purple:hover {
+      background-color: #5e29a8;
+    }
+    .course-header img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .course-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .info-icons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 0.9rem;
+      color: #666;
+      margin: 10px 0;
+    }
+    .info-icons i {
+      color: #7a34cc;
+      margin-right: 5px;
+    }
+    .accordion-button {
+      font-weight: 500;
+      color: #3e0b64;
+    }
+    .accordion-body ul {
+      padding-left: 20px;
+    }
+    .accordion-body ul li {
+      list-style: disc;
+    }
+    .faq-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .faq-section h3 {
+      color: #3e0b64;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header-bar">
+  <h5>Course Details</h5>
+  <div>
+    <button class="btn btn-outline-primary">Enroll Now</button>
+    <button class="btn btn-purple">Start Course</button>
+  </div>
+</div>
+
+<div class="container course-container">
+  <div class="course-details">
+    <div class="course-header">
+      <img src="/images/python_full_stack.jpg" alt="Course Image">
+    </div>
+    <div class="course-title">Python Fullstack Development</div>
+    <div class="info-icons">
+      <span><i class="bi bi-clock"></i> 9 Months to 1 Year</span>
+      <span><i class="bi bi-calendar"></i> Starts from May 1st, 2025</span>
+    </div>
+    <p>A Python full stack course equips learners with the skills needed to develop both front-end and back-end components of web applications using Python and related technologies...</p>
+    <ul>
+      <li>Core Python Programming – Data types, Loops, Functions, OOP, error handling, and file handling.</li>
+      <li>Python for Web Development – HTML, CSS, JavaScript, and frameworks like Flask/Django.</li>
+      <li>Back-end Integration – REST APIs, Database handling, ORM, SQL.</li>
+      <li>Version Control – Using Git and GitHub for managing code and collaboration on projects.</li>
+      <li>Authentication and Authorization – Implementing user logins, registration, and secure data handling.</li>
+      <li>Deployment – Hosting applications on Heroku, AWS, Vercel, etc.</li>
+      <li>Testing and Debugging – Writing test cases, debugging tools, and maintaining clean code.</li>
+      <li>Final Hands-on Project – Build a full-stack app such as blogging, e-commerce, admin dashboard, etc.</li>
+    </ul>
+  </div>
+
+  <div class="course-sidebar">
+    <h5>Course Overview</h5>
+    <div class="accordion" id="courseAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingHTML">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHTML">
+            HTML
+          </button>
+        </h2>
+        <div id="collapseHTML" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <ul>
+              <li>Structure of HTML</li>
+              <li>Basic Tags</li>
+              <li>Links and Anchors</li>
+              <li>Tables</li>
+              <li>Formatting Tags</li>
+              <li>Semantic Tags</li>
+              <li>Media Tags</li>
+              <li>Forms</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingCSS">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCSS">
+            CSS
+          </button>
+        </h2>
+        <div id="collapseCSS" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul>
+              <li>Selectors</li>
+              <li>Properties</li>
+              <li>Box Model</li>
+              <li>Flexbox</li>
+              <li>Grid</li>
+              <li>Transitions</li>
+              <li>Animations</li>
+              <li>Media Queries</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingJS">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJS">
+            Javascript
+          </button>
+        </h2>
+        <div id="collapseJS" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul>
+              <li>Variables and Data Types</li>
+              <li>Functions and Scope</li>
+              <li>DOM Manipulation</li>
+              <li>Event Handling</li>
+              <li>ES6+ Features</li>
+              <li>Asynchronous JS – Callbacks, Promises, Async/Await</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingJquery">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJquery">
+            Jquery
+          </button>
+        </h2>
+        <div id="collapseJquery" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul>
+              <li>Introduction and Syntax</li>
+              <li>Selectors and Events</li>
+              <li>Effects and Animations</li>
+              <li>DOM Manipulation</li>
+              <li>AJAX with jQuery</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingReact">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReact">
+            React JS
+          </button>
+        </h2>
+        <div id="collapseReact" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul>
+              <li>JSX and Components</li>
+              <li>State and Props</li>
+              <li>Hooks (useState, useEffect, etc.)</li>
+              <li>Routing with React Router</li>
+              <li>API Integration</li>
+              <li>State Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSQL">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSQL">
+            SQL
+          </button>
+        </h2>
+        <div id="collapseSQL" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul>
+              <li>Database Basics</li>
+              <li>CRUD Operations</li>
+              <li>Joins and Subqueries</li>
+              <li>Indexes and Views</li>
+              <li>Stored Procedures and Triggers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingBootstrap">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBootstrap">
+            Bootstrap
+          </button>
+        </h2>
+        <div id="collapseBootstrap" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul>
+              <li>Bootstrap Grid System</li>
+              <li>Components</li>
+              <li>Utilities and Helpers</li>
+              <li>Modals and Alerts</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSass">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSass">
+            SASS
+          </button>
+        </h2>
+        <div id="collapseSass" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul>
+              <li>Variables and Nesting</li>
+              <li>Partials and Import</li>
+              <li>Mixins and Inheritance</li>
+              <li>Operators and Functions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingPython">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePython">
+            Python
+          </button>
+        </h2>
+        <div id="collapsePython" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul>
+              <li>Basics and Data Structures</li>
+              <li>OOP Concepts</li>
+              <li>File Handling</li>
+              <li>Error Handling</li>
+              <li>Working with Libraries</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingDjango">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDjango">
+            Django
+          </button>
+        </h2>
+        <div id="collapseDjango" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul>
+              <li>Project Setup</li>
+              <li>Models and Migrations</li>
+              <li>Views and Templates</li>
+              <li>Forms and Authentication</li>
+              <li>Admin Panel and Deployment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingGit">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGit">
+            Git & GitHub
+          </button>
+        </h2>
+        <div id="collapseGit" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul>
+              <li>Version Control Basics</li>
+              <li>Committing and Branching</li>
+              <li>Merge Conflicts</li>
+              <li>Remote Repositories</li>
+              <li>Collaboration on GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingPractice">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePractice">
+            Practice Test
+          </button>
+        </h2>
+        <div id="collapsePractice" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul>
+              <li>Module-wise MCQs</li>
+              <li>Hands-on Coding Problems</li>
+              <li>Mock Interview Questions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSolving">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolving">
+            Solving Questions
+          </button>
+        </h2>
+        <div id="collapseSolving" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul>
+              <li>DSA Questions (Easy to Advanced)</li>
+              <li>Real-world Problem Solving</li>
+              <li>Project-based Assignments</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="faq-section">
+  <h3>Frequently Asked Questions (FAQ)</h3>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeadingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne">
+          What are the prerequisites for this course?
+        </button>
+      </h2>
+      <div id="faqCollapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          No prior coding experience is required. A basic understanding of computers and web usage is helpful but not mandatory.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeadingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo">
+          Will I get a certificate after completion?
+        </button>
+      </h2>
+      <div id="faqCollapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Yes, participants will receive a certificate upon successful completion of the course and final project.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqHeadingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree">
+          What kind of projects will I work on?
+        </button>
+      </h2>
+      <div id="faqCollapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          You will work on hands-on projects such as blog platforms, e-commerce sites, and admin dashboards using full-stack technologies.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p><strong>Start Your Career With Us</strong></p>
+  <p>Courses and Internships for aspiring tech students</p>
+  <div>
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-twitter"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-linkedin"></i></a>
+  </div>
+  <p class="mt-3">Contact Details<br>
+  📞 +91-8305251056<br>
+  📧 example@gmail.com</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

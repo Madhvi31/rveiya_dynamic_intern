@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revieya Dynamics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      background-color: #0f0c29;
+      background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 80px;
+      background-color: #1b1b2f;
+      border-bottom: 2px solid #00aaff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 12px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #00aaff;
+      border-bottom: 2px solid #00aaff;
+      padding-bottom: 5px;
+    }
+
+    .hero {
+      background-image: url('/images/image\ 70.png')
+      ;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: white;
+      padding: 120px 80px;
+      text-align: left;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.65);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 25px;
+      line-height: 1.2;
+      color: #fff;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #ddd;
+      margin-bottom: 15px;
+    }
+
+    .location {
+      background-color: #fff;
+      color: #000;
+      padding: 50px 80px;
+      text-align: left;
+    }
+
+    .location h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #1b1b2f;
+    }
+
+    .location p {
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+
+    .footer {
+      background-color: #1f1f2f;
+      color: #fff;
+      padding: 40px 80px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer h3 {
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      color: #00aaff;
+    }
+
+    .footer p {
+      margin: 6px 0;
+      font-size: 1rem;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 15px;
+      color: #ccc;
+      font-size: 1.8rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #00aaff;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 40px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 10px;
+      }
+      .hero {
+        padding: 80px 40px;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .location {
+        padding: 30px 40px;
+      }
+      .footer {
+        padding: 30px 40px;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/images/image 47.png" alt="Logo">
+      <h2>Revieya Dynamics</h2>
+    </div>
+    <nav>
+      <a href="/index3.html">Home</a>
+      <a href="/about.html" class="active">About</a>
+      <a href="/courses.html">Courses</a>
+      <a href="/intern.html">Internships</a>
+      <a href="/index3.html">Contact</a>
+      <img src="/images/image 49.png" class="profile-pic" alt="Profile" />
+    </nav>
+  </header>
+
+  <section class="hero" style="display: flex; align-items: center; justify-content: center; text-align: center; min-height: 80vh;">
+    <div class="hero-content" style="max-width: 900px;">
+      <h1>Empowering Students Through Quality Education</h1>
+      <p>
+        Welcome to Revieya Dynamics, your destination for high-quality, accessible online education. We are driven by a simple but powerful mission: to make learning easy, affordable, and impactful for everyone. In a world that’s rapidly changing, we believe learning should never stop.
+        Our platform offers a wide variety of online courses in technology, business, design, data science, and more. Each course is carefully designed by experienced instructors and industry experts. Whether you're a beginner starting from scratch or a professional upgrading your skills, we’ve got you covered.
+        Our content is interactive, practical, and real-world focused, helping you apply what you learn immediately. We provide hands-on projects, quizzes, and assignments to reinforce learning through doing. With flexible self-paced learning, you can study on your own schedule—anytime, anywhere.
+        We prioritize student success with personalized support, mentorship, and career-focused resources. Our courses are regularly updated to match industry standards and employer expectations. You’ll gain not just theoretical knowledge, but also the job-ready skills needed to stand out in the real world.
+        We believe in affordable education that doesn’t compromise on quality. That's why our pricing is transparent, with no hidden fees or subscriptions. Once enrolled, you get lifetime access to course materials and future updates.
+        Over the years, thousands of students have trusted us to build their skills and transform their careers. Many of our learners have gone on to land new jobs, promotions, and freelance opportunities.
+      </p>
+    </div>
+  </section>
+  
+
+  <section class="location">
+    <h2>Our Location</h2>
+    <p>📍 1st sector, HSR Layout, Bangalore, Karnataka 560102</p>
+    <p>🕐 Working Hours : 9 AM - 5 PM</p>
+    <p>📞 +91 6303251526</p>
+    <p>📧 example@gmail.com</p>
+  </section>
+
+  <footer class="footer">
+    <div>
+      <h3>Start Your Career With Us</h3>
+      <p>Courses and Internships for aspiring tech students</p>
+      <div class="social-icons">
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+        <a href="#">💼</a>
+        <a href="#">🖤</a>
+      </div>
+    </div>
+    <div>
+      <h3>Contact Details</h3>
+      <p>📞 +91 6303251526</p>
+      <p>📧 example@gmail.com</p>
+    </div>
+  </footer>
+</body>
+</html>

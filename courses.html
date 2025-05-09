@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Education Platform</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">EDUCATION</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/index3.html" >Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/courses.html"class="active">Courses</a></li>
+        <li><a href="/intern.html">Internships</a></li>
+        <li><a href="/index3.html">Contact</a></li>
+        <li class="profile" onclick="toggleDropdown(event)">
+          <img src="/images/image 49.png" class="profile-pic" alt="Profile" />
+          <ul class="dropdown" id="profile-dropdown">
+            <li><a href="/index1.html">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- Courses Section -->
+  <section class="courses" id="course_id">
+    <h2>Courses We Provide</h2>
+    <div class="card-grid">
+      <!-- Reusable Card -->
+      <div class="card">
+        <img src="/images/py_full.jpg" alt="Course Image" />
+        <div class="card-body">
+          <h3>Python Fullstack Development</h3>
+          <p>Master Python Full stack with advanced tools and technology</p>
+          <div class="rating-price">
+            <span class="stars">★★★★★</span>
+            <span class="price">$ 360</span>
+          </div>
+          <a href="/py_full_stack.html" style="background-color:#0d3053; color:white; display:inline-block; text-align:center; font-weight:400; border:1px solid black; text-decoration:none; box-shadow:0 2px 2px gray;" class="btn details full_button">View Details</a>
+
+
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/images/java_full_co.webp" alt="Course Image" />
+        <div class="card-body">
+          <h3>Java Fullstack Development</h3>
+          <p>Master front-end and back-end development with Java and modern tools.</p>
+          <div class="rating-price">
+            <span class="stars">★★★★★</span>
+            <span class="price">$ 360</span>
+          </div>
+          <button class="btn details">View Details</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/images/web_dev_co.jpg" alt="Course Image" />
+        <div class="card-body">
+          <h3>Web Development</h3>
+          <p>Learn to build stunning and responsive websites from scratch.</p>
+          <div class="rating-price">
+            <span class="stars">★★★★★</span>
+            <span class="price">$ 360</span>
+          </div>
+          <button class="btn details">View Details</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/images/ml_co.jpg" alt="Course Image" />
+        <div class="card-body">
+          <h3>Python with AI and ML</h3>
+          <p>Dive into machine learning and artificial intelligence using Python.</p>
+          <div class="rating-price">
+            <span class="stars">★★★★★</span>
+            <span class="price">$ 360</span>
+          </div>
+          <button class="btn details">View Details</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/images/java_co.jpg" alt="Course Image" />
+        <div class="card-body">
+          <h3>Core Java</h3>
+          <p>Get strong foundations in Java programming with object-oriented concepts.</p>
+          <div class="rating-price">
+            <span class="stars">★★★★★</span>
+            <span class="price">$ 360</span>
+          </div>
+          <button class="btn details">View Details</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/images/ui_co.png" alt="Course Image" />
+        <div class="card-body">
+          <h3>UI/UX Designing</h3>
+          <p>Design stunning user experiences and intuitive interfaces with modern tools.</p>
+          <div class="rating-price">
+            <span class="stars">★★★★★</span>
+            <span class="price">$ 360</span>
+          </div>
+          <button class="btn details">View Details</button>
+        </div>
+      </div>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left">
+      <h3>Start Your Career With Us</h3>
+      <p>Courses and Internships for aspiring tech students.</p>
+      <div class="socials">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+    <div class="footer-right">
+      <h4>Contact Details</h4>
+      <p>+91 6303552969</p>
+      <p>scanplydesign@gmail.com</p>
+    </div>
+  </footer>
+  <script>
+    function toggleDropdown(event) {
+      event.stopPropagation();
+      const profile = document.querySelector('.profile');
+      profile.classList.toggle('active');
+    }
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(event) {
+      const profile = document.querySelector('.profile');
+      if (!profile.contains(event.target)) {
+        profile.classList.remove('active');
+      }
+    });
+  </script>
+
+    
+</body>
+</html>
